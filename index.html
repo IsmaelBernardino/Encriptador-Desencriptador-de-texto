@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="img/Logo-1.png" alt="Logo" />
+    </header>
+    <div class="responsive">
+      <section class="main">
+        <textarea
+          name="texto"
+          class="text"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <p class="aviso">
+          <img src="img/bi_exclamation-circle-fill.png" alt="exclamation" />
+          Solo letras minusculas y sin acento
+        </p>
+        <div class="botones">
+          <button class="btn btn-principal" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button class="btn btn-secundario" onclick="desencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </section>
+      <section class="resultado">
+        <p id="resultado-texto">
+          <span>Ningun mensaje fue encontrado</span> <br />
+          Ingresa el texto que desees encriptar o desencriptar
+          <img src="img/Muñeco.png" alt="muñeco" class="muneco" />
+        </p>
+        <button class="btn btn-secundario btn-copy" onclick="copiarTexto()">
+          Copy
+        </button>
+      </section>
+    </div>
+    <script src="js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
